@@ -8,4 +8,8 @@
     dnf:
       name: httpd
       state: latest
+  - name: update tutto
+    dnf:
+      name: "*"
+      state: latest
 
