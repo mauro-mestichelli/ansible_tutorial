@@ -1,0 +1,11 @@
+---
+
+- hosts: GRUPPOCENTOS
+  become: true
+
+  tasks:
+  - name: test install httpd
+    dnf:
+      name: httpd
+      state: latest
+

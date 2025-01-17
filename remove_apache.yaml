@@ -1,0 +1,11 @@
+---
+
+- hosts: GRUPPOCENTOS
+  become: true
+
+  tasks:
+  - name: test remove httpd
+    dnf:
+      name: httpd
+      state: absent
+
