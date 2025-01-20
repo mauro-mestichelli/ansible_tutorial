@@ -1,3 +1,5 @@
 [GRUPPOCENTOS]
-centos92
-centos93
+centos92	http_server=httpd php=php
+
+[GRUPPOUBUNTU]
+ubuntu24	http_server=apache2 php=

@@ -8,4 +8,5 @@
     dnf:
       name: httpd
       state: absent
+    when: ansible_distribution == "CentOS"
 
