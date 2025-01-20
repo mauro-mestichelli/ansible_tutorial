@@ -1,6 +1,6 @@
 ---
 
-- hosts: GRUPPOCENTOS
+- hosts: [ "GRUPPOCENTOS", "GRUPPOUBUNTU" ]
   become: true
 
   tasks:

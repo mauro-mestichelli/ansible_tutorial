@@ -2,4 +2,4 @@
 centos92	http_server=httpd php=php
 
 [GRUPPOUBUNTU]
-ubuntu24	http_server=apache2 php=
+ubuntu24	http_server=apache2 php=libapache2-mod-php
