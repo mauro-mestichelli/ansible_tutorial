@@ -1,0 +1,19 @@
+- name: test install apache and php plus update cache
+  package:
+    name:
+      - "{{ http_server }}"
+      - "{{ php }}"
+    state: latest
+    update_cache: true
+- name: copy index.html
+  copy:
+    src: default_site.html
+    dest: /var/www/html/index.html
+    owner: root
+    group: root
+    mode: 0644
+- name: starto il service apache
+  service:
+    name: "{{ http_server }}"
+    state: started
+    enabled: yes

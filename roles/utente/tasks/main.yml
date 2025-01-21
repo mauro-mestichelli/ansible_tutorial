@@ -1,0 +1,9 @@
+- name: creo utente simone
+  user:
+    name: simone
+    groups: root
+    shell: /bin/bash
+- name: add key to user
+  authorized_key:
+    user: simone
+    key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDu9mOFaUa9tlwsIsz39w0RE9UXF1VxjkBH8eEt+Be3MwUUbYjSaXZLJd5N/QMwlO+2uJK1z5t3QZ3q4z2G+5lQsB4MmlOBdwQVkmMq8P9iQCg5n8TiU980MJQ+M6l/Q7664Vo7YFwJuVKjlcThL+CysFsIB/A+MV6+N120s7MKdAKunQklWyRodp+AXSQMfAXPNlHehlpgy5pnqX1P3KBU7MYyp1RGxtEknNZ/m0p27jqudCFbV73JWAhBZbBobx/9wLmjVeUsrnGlYwqSs7xra+KsEPwKEnK7I273XyUYLz7w9nZ8fcbtlk0cgqHkmDj+BjtL20O6aGixt7j6Jz//uxNZLIxwned8tQUBYVMUL2BoVZOBQnLe/NTN21gq/d3Ixq05Huw9KwkWp3aVLzEnb0NWez5Heg6u8WGZdhIQGgQBNLt8/gxIYTuMY6R+h95h5+R+IHbFjkx2p1BCDfsB/UEUgARy8jES2MyGylJ+qlz9OfI838UNeDzfK+q/w0c= ansible@centos9"

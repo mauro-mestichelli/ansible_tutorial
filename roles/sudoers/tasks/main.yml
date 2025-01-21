@@ -1,0 +1,7 @@
+- name: add simone to sudoers
+  copy:
+    src: files/sudoer_simone
+    dest: /etc/sudoers.d/simone
+    owner: root
+    group: root
+    mode: 0440
