@@ -1,5 +1,5 @@
 [GRUPPOCENTOS]
-centos92	http_server=httpd php=php
+centos92
 
 [GRUPPOUBUNTU]
-ubuntu24	http_server=apache2 php=libapache2-mod-php
+ubuntu24
